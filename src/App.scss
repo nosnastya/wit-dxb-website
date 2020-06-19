@@ -1,0 +1,97 @@
+$wit-blue: #2831A4;
+$wit-pink: #F99899;
+$dark-grey: #363636;
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 50px;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.disp-flex {
+    display: flex;
+}
+
+.flex-just--sb {
+    justify-content: space-between;
+}
+
+.flex-align--cen {
+    align-items: center;
+}
+
+.nav-item:not(:first-child) {
+    margin-left: 20px;
+}
+
+header {
+    padding: 30px 40px;
+}
+
+button {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    line-height: normal;
+    padding: 14px 24px;
+    font: 500 15px Poppins;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1.2em;
+    letter-spacing: .02em;
+    border-radius: 7px;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    &:hover {
+        background-color: $dark-grey;
+        border-color: $dark-grey;
+    }
+    &:focus,
+    &:active {
+        box-shadow: 0px 5px 7px rgba($dark-grey, 0.5);
+    }
+}
+a {
+    color: #000;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        color: $wit-blue;
+    }
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: $wit-blue;
+    border-color: $wit-blue;
+    &:hover,
+    &:active {
+        color: $wit-blue;
+        background-color: #fff;
+        border-color: $wit-blue;
+    }
+}
+
+.btn-lg {
+    padding: 20px 30px;
+    font-size: 16px;
+}
