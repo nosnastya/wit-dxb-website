@@ -1,19 +1,24 @@
 import React from 'react';
 import logo from '../logo.png';
-
+import {
+    Link
+} from "react-router-dom";
 function Header() {
     return (
-        <header className="disp-flex flex-just--sb flex-align--cen">
-            <img src={logo} className="App-logo" alt="logo" />
-            <nav className="disp-flex flex-align--cen">
-                <div className="nav-item">
-                    <a href="./">Our Mission</a>
-                </div>
-                <div className="nav-item">
-                    <a href="./">Contact Us</a>
-                </div>
-                <button className="btn-primary nav-item">Join us</button>
-
+        <header className="header">
+            <Link to="/">
+                <img src={logo} className="logo" alt="logo" />
+            </Link>
+            <nav>
+                <ul className="disp-flex flex-align--cen">
+                    <li className="nav-item">
+                        <Link to="/about">Our Mission</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/contact">Contact Us</Link>
+                    </li>
+                    <li className="nav-item"><button className="btn-primary">Join us</button></li>
+                </ul>
             </nav>
         </header>
     );
